@@ -1,0 +1,53 @@
+.top_container {
+  width: 217px;
+}
+.signup_form {
+  margin-top: -25px;
+}
+@media (max-width: 800px) {
+  .box {
+    margin-top: -10px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .welcome {
+    margin-bottom: 50px !important;
+    width: 100%;
+  }
+  .top_container {
+    border: none !important;
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+  }
+  .top {
+    width: 90px !important;
+    object-fit: contain;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: -200px !important;
+  }
+  .middle {
+    width: 100%;
+    margin-left: 0px !important;
+  }
+  .goback {
+    visibility: hidden;
+  }
+  .signup_heading {
+    font-size: 1rem !important;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  .mail {
+    font-size: 0.72rem;
+  }
+  .alllist_div {
+    margin-left: 0px !important;
+    padding: 0px !important;
+  }
+  .list_heading {
+    margin-top: -20px;
+  }
+}

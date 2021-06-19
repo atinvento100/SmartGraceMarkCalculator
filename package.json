@@ -1,0 +1,47 @@
+{
+  "name": "s",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-init": "node ./node_modules/jasmine/bin/jasmine.js init",
+    "test": "node ./node_modules/jasmine/bin/jasmine.js",
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chai-http": "^4.3.0",
+    "chai-json-schema": "^1.5.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "delay": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.10",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.5.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.7",
+    "chai": "^4.3.4",
+    "concurrently": "^6.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "ignore-styles": "^5.0.1",
+    "jasmine": "^3.7.0",
+    "jasmine-console-reporter": "^3.1.0",
+    "jasmine-enzyme": "^7.1.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.7",
+    "should": "^13.2.3"
+  }
+}

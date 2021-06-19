@@ -1,0 +1,87 @@
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 150px;
+}
+.home__student {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.home__faculty {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.home__admin {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.home_card {
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.2) !important;
+}
+.home_card:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.4) !important;
+}
+
+@media (max-width: 812px) {
+  .home {
+    margin-top: 100px !important;
+    display: table !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .student_image {
+    width: 100px !important;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .faculty_image {
+    width: 100px !important;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .admin_image {
+    width: 100px !important;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .student_button {
+    padding: 1px;
+    font-size: 12px;
+    height: 30px;
+    margin-top: 10px !important;
+    margin-bottom: 10px;
+  }
+  .faculty_button {
+    padding: 1px;
+    font-size: 12px;
+    height: 30px;
+    margin-top: 10px !important;
+    margin-bottom: 10px;
+  }
+  .admin_button {
+    padding: 1px;
+    font-size: 12px;
+    height: 30px;
+    margin-top: 10px !important;
+    margin-bottom: 10px;
+  }
+  .home-text {
+    visibility: hidden;
+  }
+
+  .home_card {
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.2) !important;
+    margin-left: 0px !important;
+  }
+}
